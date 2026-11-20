@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: en-US
+reviews:
+  profile: chill
+  high_level_summary: true
+  review_status: true
+  poem: false
+  auto_review:
+    enabled: true
+    drafts: false
+  path_filters:
+    - "!pnpm-lock.yaml"
+    - "!build/**"
+  path_instructions:
+    - path: "src/**/*.ts"
+      instructions: >-
+        Preserve the README's MCP tool contracts for pgsqlTest and graphileTest, including isolated database testing and transaction rollback guidance. Keep tool and prompt changes consistent with the documented Cursor and Claude Desktop usage.
+chat:
+  art: false
